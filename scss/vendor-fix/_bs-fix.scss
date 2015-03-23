@@ -1,0 +1,14 @@
+// Bootstrap Fix
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+.img-responsive {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Navbar
+.nav>li>a {
+    padding: 1em;
+}
