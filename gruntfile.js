@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         sass: {
             options: {
-                sourceMap: true
+                sourceMap: false
             },
             dist: {
                 files: {
@@ -36,7 +36,6 @@ module.exports = function(grunt) {
     });
 
     require('load-grunt-tasks')(grunt);
-
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
