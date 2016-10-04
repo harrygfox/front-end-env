@@ -1,0 +1,25 @@
+{
+  "name": "front-end-env",
+  "version": "1.0.0",
+  "description": "simple task runner combo to compile and minify sass partials",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-sass": "^1.2.1",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrygfox/front-end-env.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrygfox/front-end-env/issues"
+  },
+  "homepage": "https://github.com/harrygfox/front-end-env#readme"
+}
