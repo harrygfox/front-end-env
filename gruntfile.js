@@ -1,7 +1,5 @@
 module.exports = function(grunt) {
 
-    require('load-grunt-tasks')(grunt);
-
     // project config
     grunt.initConfig({
         sass: {
@@ -21,15 +19,26 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    'output.css': ['foo.css', 'bar.css']
+                    'src/css/main.min.css': ['scss/main.css']
                 }
             }
+        },
+        watch: {
+            scripts: {
+                files: ['scss/**/*.scss'],
+                tasks: ['sass', 'cssmin'],
+                options: {
+                  spawn: false,
+                  interrupt: true
+                },
+            },
         }
     });
 
-    
+    require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['sass']);
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
+    grunt.registerTask('default', ['sass', 'cssmin', 'watch']);
 }

@@ -1,6 +1,6 @@
 /*
 |---------------------------------------|
-|             PROVERSITY VS3            |
+|                   Main.scss           |
 |_______________________________________|
 */
 .container-fluid {
@@ -17,11 +17,18 @@
 body {
   text-align: center; }
 
+html {
+  background-color: #fdfdfd; }
+
 .sign-up a {
   display: block;
   padding: 1em; }
 
 .sub-banner {
-  background-image: url('http://placehold.it/400x200');
+  background-image: url("http://placehold.it/400x200");
   background-position: 0;
-  padding: 4em 0; }
+  padding: 4em 0;
+  background-color: black;
+  color: white; }
+
+/*# sourceMappingURL=main.css.map */
