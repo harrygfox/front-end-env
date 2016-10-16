@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    'src/css/main.min.css': ['scss/main.css']
+                    'css/main.min.css': ['scss/main.css']
                 }
             }
         },
